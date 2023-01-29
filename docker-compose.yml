@@ -1,2 +1,6 @@
-worker:
-python startbot.py
+version: "3.8",
+services:
+  worker:
+    build: python startbot.py
+    environment:
+      OKTETO_TOKEN: $OKTETO_TOKEN
